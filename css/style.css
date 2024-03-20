@@ -101,6 +101,13 @@ ul li:not(:last-child) {
   text-align: center;
 }
 
+.bio h2 {
+  line-height: 1.5;
+  width: 70px;
+  text-align: right;
+  text-transform: none;
+}
+
 .bio ul li:not(:last-child) {
   margin-bottom: 0px;
 }
@@ -163,7 +170,7 @@ ul li:not(:last-child) {
 .built-with {
   padding-top: 28px;
   padding-bottom: 14px;
-  color: #777;
+  color: #595959;
   font-size: 10px;
 }
 
@@ -422,6 +429,11 @@ section .headerless-info:not(:last-child) {
   .bio h1 {
     text-align: left;
   }
+
+  .bio h2 {
+    text-align: left;
+  }
+
   .bio .info-container {
     padding-left: 0px;
   }
