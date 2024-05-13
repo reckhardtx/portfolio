@@ -78,6 +78,33 @@ ul li:not(:last-child) {
   color: #fff;
 }
 
+/* maintenance */
+.maintenance {
+  padding-top: 40px;
+  padding-left: 40px;
+  /* text-transform: uppercase; */
+}
+
+.maintenance h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.maintenance h2 {
+  text-transform: none;
+}
+
+.maintenance .heading-space {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 787px) {
+  .maintenance {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
+
 /*      Home Page      */
 .bio {
   width: 759px;
@@ -92,7 +119,7 @@ ul li:not(:last-child) {
 }
 
 .bio .info-container {
-  padding-left: 200px;
+  /* padding-left: 200px; */
 }
 
 .bio h1 {
