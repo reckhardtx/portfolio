@@ -6,10 +6,11 @@
     <title>EP Analytics - Robert Eckhardt</title>
     <meta
       name="description"
-      content="Website UI design and development contract with EP Analytics,
-      a San Diego-based high-performance computing company, enhancing their
-      online presence."
+      content="UI/UX for conceptual tech venture, blending
+      aesthetics and functionality for a computer case manufacturer with
+      custom PC services."
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,69 +29,84 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WFEFPXH8TM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
+    gtag("config", "G-WFEFPXH8TM");
+  </script>
   <body>
-    <div class="close-project-banner">
-      <a href="./" class="close-project">Close Project</a>
-    </div>
-
-    <section class="project">
-      <h1>EP Analytics</h1>
-      <div class="main-project-image">
-        <img src="images/EP/EP.webp" alt="" class="" />
-      </div>
-
-      <section class="overview">
-        <h2>Overview</h2>
-        <div class="info-container">
-          <div class="info">
-            <h3>Challenge</h3>
-            <p>
-              Design a responsive website for San Diego business EP Analytics
-              who provide expertise and software for high-performance computing.
-            </p>
-          </div>
-
-          <div class="info">
-            <h3>Background</h3>
-            <p>
-              At MiraCosta college I was selected by my professors for a student
-              internship with EP Analytics and California Community Colleges.
-              The internship initially focused on cyber-security and later
-              shifted to a UI redesign of the company's website. During this
-              latter portion of the internship, I interviewed company leadership
-              , presented a design-direction rationale, created high-fidelity
-              mockups in Adobe XD, researched and tested multiple content
-              management systems, advocated for a transition of the company site
-              from WordPress to Webflow, and began development in Webflow.
-              Post-internship EP Analytics hired me on a contract to finish the
-              design and development of the company site.
-            </p>
-          </div>
-
-          <div class="info">
-            <h3>Tools</h3>
-            <p>Adobe XD, Photoshop, and Webflow.</p>
-          </div>
-
-          <div class="info">
-            <h3>Role</h3>
-            <p>UI Designer and Front-end Developer</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="next-study">
+    <header>
+      <nav class="nav">
+        <a href="./" class="nav__title"
+          >Robert<span class="nav__title-space"> </span>Eckhardt</a
+        >
+        <ul class="list">
+          <li><a href="">reckhardtx@gmail.com</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="case-study">
+      <section class="container">
+        <h1>EP Analytics</h1>
+        <img src="images/EP/EP.webp" alt="" class="project-img" />
         <a
           href="https://www.epanalytics.com/index.html"
           target="_blank"
           class="button button--secondary"
-          >Visit epanalytics.com</a
+          >View Live Website</a
         >
-        <a href="./pattern" class="button button--primary"
-          >See Next Project: Pattern</a
-        >
+        <h2>Project Overview</h2>
+        <div class="info-container">
+          <h3>Challenge</h3>
+          <p>
+            Design a responsive website for EP Analytics, a San Diego-based
+            company specializing in high-performance computing solutions and
+            expertise.
+          </p>
+          <h3>Background</h3>
+          <p>
+            At MiraCosta College, I was nominated by my professors for a student
+            internship with EP Analytics and California Community Colleges. The
+            internship initially focused on cybersecurity, later shifting to a
+            UI redesign of the company website. I started this phase by
+            conducting a brief questionnaire and interview, followed by
+            presenting a design rationale for approval, citing successful
+            real-world examples. Once approved, I created high-fidelity homepage
+            mockups in Adobe XD. Due to time constraints, I focused on the
+            homepage and began researching site builders. After thorough
+            testing, I recommended transitioning the company's site from
+            WordPress to Webflow for its superior customization options,
+            eliminating the need for numerous third-party plugins and reducing
+            complexity. I completed the internship with a developed homepage,
+            and EP Analytics hired me on contract to finish the site's design
+            and development. Throughout the process, I worked closely with EP
+            Analytics' excellent leadership team.
+          </p>
+          <h3>Role</h3>
+          <p>UI Designer and Developer</p>
+          <h3>Tools</h3>
+          <p>Adobe XD, Photoshop, and Webflow.</p>
+        </div>
       </section>
-    </section>
+      <section class="container next-work">
+        <a href="sdam.html">
+          <img src="images/SDAMHome.webp" alt="" class="project-img" />
+        </a>
+        <a href="./sdam" class="button button--secondary">Next Work: SDAM</a>
+      </section>
+    </main>
+    <footer>
+      <p>Designed in Figma, Built with HTML & CSS</p>
+      <p>© 2024 ROBERT ECKHARDT</p>
+    </footer>
   </body>
 </html>

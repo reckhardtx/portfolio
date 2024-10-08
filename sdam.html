@@ -6,10 +6,11 @@
     <title>SDAM - Robert Eckhardt</title>
     <meta
       name="description"
-      content="UI/UX for a conceptual public art museum,
-      facilitating exhibition and event promotion, visitor information, and
-      scheduling functionality for enhanced patron experience."
+      content="UI/UX for conceptual tech venture, blending
+      aesthetics and functionality for a computer case manufacturer with
+      custom PC services."
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,94 +29,98 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WFEFPXH8TM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
+    gtag("config", "G-WFEFPXH8TM");
+  </script>
   <body>
-    <div class="close-project-banner">
-      <a href="./" class="close-project">Close Project</a>
-    </div>
-
-    <section class="project">
-      <h1>SDAM</h1>
-      <div class="main-project-image">
-        <img src="images/SDAM/Home-ATF.webp" alt="" class="project-link__img" />
-      </div>
-
-      <section class="overview">
-        <h2>Overview</h2>
+    <header>
+      <nav class="nav">
+        <a href="./" class="nav__title"
+          >Robert<span class="nav__title-space"> </span>Eckhardt</a
+        >
+        <ul class="list">
+          <li><a href="">reckhardtx@gmail.com</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="case-study">
+      <section class="container">
+        <h1>SDAM</h1>
+        <img src="images/SDAM/SDAMHome.webp" alt="" class="project-img" />
+        <a
+          href="https://www.figma.com/design/nLmZvtv80YqzDrr79ETr4Z/SDAM?node-id=897-2&t=53cfVGdTWqs2RoO5-1"
+          target="_blank"
+          class="button button--secondary"
+          >View Figma Design File</a
+        >
+        <h2>Project Overview</h2>
         <div class="info-container">
-          <div class="info">
-            <h3>Challenge</h3>
-            <p>
-              Design a responsive website for a conceptual public art museum to
-              advertise exhibitions and events, provide museum information, and
-              enable patrons to schedule visits.
-            </p>
-          </div>
+          <h3>Challenge</h3>
+          <p>
+            Design a responsive website for a conceptual public art museum to
+            advertise exhibitions and events, provide museum information, and
+            enable patrons to schedule visits.
+          </p>
+          <h3>Audience</h3>
+          <p>
+            San Diego residents and visitors, ranging from individuals, couples,
+            families, and groups of friends, to school and work groups. It
+            caters to people with an interest in art, as well as those simply
+            looking for an engaging activity to enjoy alone or with others.
+          </p>
 
-          <div class="info">
-            <h3>Audience</h3>
-            <p>
-              San Diego residents and visitors, to include individuals, couples,
-              dates, families, friend groups, school groups, and adult/work
-              groups. People with an interest in art or who are just looking for
-              a fun activity to do by themselves or with others.
-            </p>
-          </div>
-
-          <div class="info">
-            <h3>Goal</h3>
-            <p>
-              Design a responsive website focused on user task flows and
-              aesthetic and minimalist design to ensure users have an effective
-              and enjoyable experience with the website as well as to promote
-              SDAM as a trendy and fun place to visit.
-            </p>
-          </div>
-
-          <div class="info">
-            <h3>Tools</h3>
-            <p>Figma, Dalle-3, Lucidchart</p>
-          </div>
-
-          <div class="info">
-            <h3>Role</h3>
-            <p>Individual Project, UI/UX Designer</p>
-          </div>
-          <a
-            href="https://www.figma.com/file/nLmZvtv80YqzDrr79ETr4Z/SDAM?type=design&node-id=214%3A629&mode=design&t=boKgM7Wk6XyxjUIN-1"
-            target="_blank"
-            class="button button--secondary"
-            >View Figma Design File</a
-          >
+          <h3>Goal</h3>
+          <p>
+            Create a responsive website that prioritizes intuitive user task
+            flows and a minimalist, aesthetic design. The goal is to provide
+            users with an effective and enjoyable experience while positioning
+            SDAM as a trendy and engaging place.
+          </p>
+          <h3>Role</h3>
+          <p>Individual Project, UI/UX Designer</p>
+          <h3>Execution</h3>
+          <p>
+            Design Thinking Process: Empathize, Define, Ideate, Prototype, Test
+          </p>
+          <h3>Tools</h3>
+          <p>Figma, Dalle-3, Lucidchart</p>
         </div>
       </section>
-
-      <section class="personas">
-        <h2>Personas</h2>
+      <section class="container">
+        <h2>1. Empathize</h2>
+        <h3>User Personas</h3>
+        <!-- <p>User Personas were</p> -->
         <div class="box-container">
           <div class="box">
             <div class="box__heading">
               <img src="images/SDAM/Cam.webp" alt="" />
               <h3>Cam</h3>
-              <h4>
-                21 years old<br />
-                Graphic Design Student<br />
-                San Diego, CA
-              </h4>
+              <p>Age: 21 years old</p>
+              <p>Education: B.A. Design</p>
+              <p>Occupation: Student</p>
+              <p>Location: San Diego, CA</p>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <h4>Bio</h4>
                 <p>
-                  Cam is a 3rd year graphic design student with a profound
-                  curiosity for art. He recently took a leap of faith by asking
-                  out a classmate. He mentioned potentially going to the local
-                  art museum and is now visiting the museum's website to learn
-                  more.
+                  Cam is a 3rd year graphic design student who is passionate
+                  about art. He recently asked a classmate out on a date and
+                  mentioned visiting the local art museum.
                 </p>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Goals</h4>
                 <ul>
                   <li>
@@ -126,12 +131,13 @@
                   <li>Purchase tickets for him and his date</li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Frustrations</h4>
                 <ul>
                   <li>First date butterflies</li>
                   <li>Difficulty finding fun date ideas</li>
+                  <li>&nbsp;</li>
+                  <li>&nbsp;</li>
                 </ul>
               </div>
             </div>
@@ -140,15 +146,13 @@
             <div class="box__heading">
               <img src="images/SDAM/Kira.webp" alt="" />
               <h3>Kira</h3>
-              <h4>
-                36 years old<br />
-                B.A. Elementary Education<br />
-                Elementary School Teacher<br />
-                San Diego, CA
-              </h4>
+              <p>Age: 36 years old</p>
+              <p>Education: B.A. Education</p>
+              <p>Occupation: Teacher</p>
+              <p>Location: San Diego, CA</p>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <h4>Bio</h4>
                 <p>
                   Kira is an elementary school teacher passionate about
@@ -158,8 +162,7 @@
                   critical thinking in her students.
                 </p>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Goals</h4>
                 <ul>
                   <li>
@@ -169,120 +172,98 @@
                   <li>Schedule a visit for her class</li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Frustrations</h4>
                 <ul>
                   <li>
                     Unsure if the museum has offerings for elementary students
                   </li>
                   <li>Not tech-savvy and hates complicated online processes</li>
+                  <li>&nbsp;</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="user-stories">
-        <h2>User Stories</h2>
+        <h3>User Stories</h3>
         <div class="info-container">
-          <div class="info">
-            <h3>Cam</h3>
-            <p>
-              As a college student going on a date I want to find information on
-              the museum's exhibitions, events, ticket prices, and hours so that
-              I can decide on attending and plan my visit.
-            </p>
-          </div>
-          <div class="info">
-            <h3>Kira</h3>
-            <p>
-              As an elementary school teacher I want to see if the museum offers
-              any educational resources, tours, or work shops for
-              elementary-aged students so that I can take my class on a fun,
-              inspiring, and educational field trip
-            </p>
-          </div>
+          <p>
+            Cam: As a college student going on a date I want to find information
+            on the museum's exhibitions, events, ticket prices, and hours so
+            that I can decide on attending and plan my visit.
+          </p>
+          <p>
+            Kira: As an elementary school teacher I want to see if the museum
+            offers any educational resources, tours, or work shops for
+            elementary-aged students so that I can take my class on a fun,
+            inspiring, and educational field trip
+          </p>
         </div>
       </section>
-
-      <section class="problem-statements">
-        <h2>Problem Statements</h2>
+      <section class="container">
+        <h2>2. Define</h2>
+        <h3>Problem Statements</h3>
         <div class="info-container">
-          <div class="info">
-            <h3>Cam</h3>
-            <p>
-              Cam is a college student who needs to quickly find out information
-              on pricing, hours, workshops, and current exhibitions at the
-              museum because he is deciding on a place to take his date.
-            </p>
-          </div>
-          <div class="info">
-            <h3>Kira</h3>
-            <p>
-              Kira is an elementary school teacher who needs to find information
-              and schedule a school visit at the museum because she wants her
-              class to have a fun, inspiring, and insightful field trip.
-            </p>
-          </div>
+          <p>
+            Cam is a college student who needs to quickly find out information
+            on pricing, hours, workshops, and current exhibitions at the museum
+            because he is deciding on a place to take his date.
+          </p>
+          <p>
+            Kira is an elementary school teacher who needs to find information
+            and schedule a school visit at the museum because she wants her
+            class to have a fun, inspiring, and insightful field trip.
+          </p>
+        </div>
+        <h3>Hypothesis Statements</h3>
+        <div class="info-container">
+          <p>
+            If Cam visits the museum website then he will efficiently find basic
+            museum information so that he can decide on visiting.
+          </p>
+          <p>
+            If Kira visits the museum website then she will efficiently find
+            information on the museum's school programs and be prompted to
+            schedule a visit for her class
+          </p>
+        </div>
+        <h3>Goal Statements</h3>
+        <div class="info-container">
+          <p>
+            The museum website will let users efficiently find basic museum
+            information which will affect all potential museum visitors by
+            saving them time and frustration and allowing them to make a clear
+            and informed decision on whether or not to attend. Effectiveness
+            will be measured by tracking museum attendance.
+          </p>
+          <p>
+            The museum website will let users efficiently find information and
+            schedule group visits which will effect adult, college, k-12, and
+            disabled groups and group coordinators by preparing them for their
+            visit and saving them time and frustration. Effectiveness will be
+            measured by tracking museum group visits.
+          </p>
         </div>
       </section>
-
-      <section class="hypothesis-statements">
-        <h2>Hypothesis Statements</h2>
-        <div class="info-container">
-          <div class="info">
-            <h3>Cam</h3>
-            <p>
-              If Cam visits the museum website then he will efficiently find
-              basic museum information so that he can decide on visiting.
-            </p>
-          </div>
-          <div class="info">
-            <h3>Kira</h3>
-            <p>
-              If Kira visits the museum website then she will efficiently find
-              information on the museum's school programs and be prompted to
-              schedule a visit for her class
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="goal-statements">
-        <h2>Goal Statements</h2>
-
-        <p class="headerless-info">
-          The museum website will let users efficiently find basic museum
-          information which will affect all potential museum visitors by saving
-          them time and frustration and allowing them to make a clear and
-          informed decision on whether or not to attend. Effectiveness will be
-          measured by tracking museum attendance.
+      <section class="container">
+        <h2>3. Ideate</h2>
+        <h3>Competitive Audit</h3>
+        <p class="description">
+          Goal: Analyze the information architecture, interaction, and visual
+          design of competitors' homepage, navigation, ticket purchasing, and
+          group visit scheduling to identify strengths and weaknesses,
+          generating insights that will inform the design direction.
         </p>
-
-        <p class="headerless-info">
-          The museum website will let users efficiently find information and
-          schedule group visits which will effect adult, college, k-12, and
-          disabled groups and group coordinators by preparing them for their
-          visit and saving them time and frustration. Effectiveness will be
-          measured by tracking museum group visits.
-        </p>
-      </section>
-
-      <section class="competitive-audit">
-        <h2>Competitive Audit</h2>
-        <div class="competitive-audit-container">
+        <div class="box-container">
           <div class="box">
             <div class="box__heading">
               <h3>MOMA</h3>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <a href="https://www.moma.org/" target="_blank">moma.org</a>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Successes</h4>
                 <ul>
                   <li>Colorful interface with attention grabbing imagery</li>
@@ -298,8 +279,7 @@
                   <li>Calender tool to select ticket date</li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Drawbacks</h4>
                 <ul>
                   <li>
@@ -318,14 +298,13 @@
             <div class="box__heading">
               <h3>Louvre</h3>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <a href="https://www.louvre.fr/en" target="_blank"
                   >louvre.fr/en</a
                 >
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Successes</h4>
                 <ul>
                   <li>Elegant UI</li>
@@ -340,8 +319,7 @@
                   <li>Calender tool to select ticket date</li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Drawbacks</h4>
                 <ul>
                   <li>
@@ -368,14 +346,13 @@
             <div class="box__heading">
               <h3>The Met</h3>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <a href="https://www.metmuseum.org/" target="_blank"
                   >metmuseum.org</a
                 >
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Successes</h4>
                 <ul>
                   <li>
@@ -387,8 +364,7 @@
                   <li>Detailed museum hours near top of homepage</li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Drawbacks</h4>
                 <ul>
                   <li>
@@ -407,53 +383,49 @@
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="sketches">
-        <h2>Sketches</h2>
-        <img src="images/SDAM/Sketches.webp" alt="" />
+        <h3>Sitemap</h3>
+        <p class="description">
+          The sitemap was designed to streamline navigation, minimize the number
+          of pages, enhance discoverability, reduce clicks, and prioritize key
+          user flows. The Figma design file is linked in the next section for
+          reference.
+        </p>
       </section>
-
-      <section class="userflow">
-        <h2>Userflow</h2>
-        <img src="images/SDAM/Userflow.webp" alt="" />
-      </section>
-
-      <section class="sitemap">
-        <h2>Sitemap</h2>
-        <div class="prototype__sitemap">
-          <img src="images/SDAM/Sitemap.webp" alt="" class="sdam-sm-img" />
-        </div>
-      </section>
-      <section class="mockups">
-        <h2>Mockups</h2>
+      <section class="container">
+        <h2>4. Prototype</h2>
+        <h3>High-Fidelity Prototypes</h3>
+        <iframe
+          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          width="800"
+          height="450"
+          src="https://embed.figma.com/design/nLmZvtv80YqzDrr79ETr4Z/SDAM?node-id=897-2&embed-host=share"
+          allowfullscreen
+        ></iframe>
         <a
-          href="https://www.figma.com/file/nLmZvtv80YqzDrr79ETr4Z/SDAM?type=design&node-id=214%3A629&mode=design&t=boKgM7Wk6XyxjUIN-1"
+          href="https://www.figma.com/design/nLmZvtv80YqzDrr79ETr4Z/SDAM?node-id=897-2&t=53cfVGdTWqs2RoO5-1"
           target="_blank"
           class="button button--secondary"
           >View Figma Design File</a
         >
-        <h3>Home Page</h3>
-        <img src="images/SDAM/Home-ATF.webp" alt="" />
-        <img src="images/SDAM/Home-Attractions.webp" alt="" />
-        <img src="images/SDAM/Home-Exhibitions.webp" alt="" />
-        <img src="images/SDAM/Home-Events.webp" alt="" />
-        <img src="images/SDAM/Home-Families-Groups.webp" alt="" />
-        <img src="images/SDAM/Home-Footer.webp" alt="" />
       </section>
-
-      <section class="takeaways">
+      <section class="container">
+        <h2>5. Test</h2>
+        <p>User Testing has not been conducted for this project.</p>
+      </section>
+      <section class="container">
         <h2>Takeaways</h2>
-
-        <p class="headerless-info">
-          Finishing a high-fidelity mockup of the homepage in its entirety
-          before creating a design system or working on other pages focuses
-          design effort and allows testing and validation of visual design
-          elements in a single location before their widespread use.
-        </p>
+        <div class="info-container">
+          <p>
+            Completing a comprehensive high-fidelity mockup of the homepage
+            before developing a design system or working on additional pages
+            helps concentrate design efforts. This approach facilitates testing
+            and validating visual design elements in a single, real context,
+            ensuring their effectiveness before broader implementation.
+          </p>
+        </div>
       </section>
-
-      <section class="next-steps">
+      <section class="container">
         <h2>Next Steps</h2>
         <ul>
           <li>Create a design system</li>
@@ -462,12 +434,18 @@
           <li>Continue to iterate and improve visual design and UX</li>
         </ul>
       </section>
-
-      <section class="next-study">
-        <a href="./ep" class="button button--primary"
-          >See Next Project: EP Analytics</a
+      <section class="container next-work">
+        <a href="pattern.html">
+          <img src="images/Pattern/PatternPC.webp" alt="" class="project-img" />
+        </a>
+        <a href="./pattern" class="button button--secondary"
+          >Next Work: Pattern</a
         >
       </section>
-    </section>
+    </main>
+    <footer>
+      <p>Designed in Figma, Built with HTML & CSS</p>
+      <p>© 2024 ROBERT ECKHARDT</p>
+    </footer>
   </body>
 </html>

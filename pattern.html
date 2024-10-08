@@ -10,6 +10,7 @@
       aesthetics and functionality for a computer case manufacturer with
       custom PC services."
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,81 +29,89 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WFEFPXH8TM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
+    gtag("config", "G-WFEFPXH8TM");
+  </script>
   <body>
-    <div class="close-project-banner">
-      <a href="./" class="close-project">Close Project</a>
-    </div>
-
-    <section class="project">
-      <h1>Pattern</h1>
-      <div class="main-project-image">
-        <img
-          src="images/Pattern/Payment.webp"
-          alt=""
-          class="project-link__img"
-        />
-      </div>
-
-      <section class="overview">
-        <h2>Overview</h2>
+    <header>
+      <nav class="nav">
+        <a href="./" class="nav__title"
+          >Robert<span class="nav__title-space"> </span>Eckhardt</a
+        >
+        <ul class="list">
+          <li><a href="">reckhardtx@gmail.com</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="case-study">
+      <section class="container">
+        <h1>Pattern</h1>
+        <img src="images/Pattern/PatternPC.webp" alt="" class="project-img" />
+        <a
+          href="https://www.figma.com/design/SEPaR6QeagkbJXnxtEVnFl/Pattern?node-id=1369-1510&t=BVAE5S7AAgUYGukr-1"
+          target="_blank"
+          class="button button--secondary"
+          >View Figma Design File</a
+        >
+        <h2>Project Overview</h2>
         <div class="info-container">
-          <div class="info">
-            <h3>Product</h3>
-            <p>
-              A conceptual digital small business that manufacturers and sells a
-              computer case as well as offers a custom PC building service using
-              curated 3rd-party components.
-            </p>
-          </div>
+          <h3>Challenge</h3>
+          <p>
+            Design UI/UX for a conceptual digital small business that
+            manufacturers and sells a computer case as well as offers a custom
+            PC building service using curated 3rd-party components.
+          </p>
+          <h3>Audience</h3>
+          <p>
+            Consumers building a new PC, upgrading their current PC, or in the
+            market for a prebuilt PC. Specifically, gamers, content creators,
+            hobbyists, and professionals whose work is dependant on a powerful
+            PC.
+          </p>
 
-          <div class="info">
-            <h3>Audience</h3>
-            <p>
-              Consumers building a new PC, upgrading their current PC, or in the
-              market for a prebuilt PC. Specifically, gamers, content creators,
-              and professionals whose work is dependant on a powerful PC.
-            </p>
-          </div>
-
-          <div class="info">
-            <h3>Goal</h3>
-            <p>
-              Design a responsive e-commerce website focused on user task flows
-              and aesthetic and minimalist design to establish Pattern's brand
-              identity and best fulfill their business processes.
-            </p>
-          </div>
-
-          <div class="info">
-            <h3>Role</h3>
-            <p>Individual Project, UI/UX Designer</p>
-          </div>
-          <a
-            href="https://www.figma.com/file/SEPaR6QeagkbJXnxtEVnFl/Pattern?type=design&node-id=2%3A72&mode=design&t=5Mre5wPNP1CM2sIz-1"
-            target="_blank"
-            class="button button--secondary"
-            >View Figma Design File</a
-          >
+          <h3>Goal</h3>
+          <p>
+            Design a responsive e-commerce website focused on user task flows
+            and aesthetic and minimalist design to establish Pattern's brand
+            identity and best fulfill their business processes.
+          </p>
+          <h3>Role</h3>
+          <p>Individual Project, UI/UX Designer</p>
+          <h3>Execution</h3>
+          <p>
+            Design Thinking Process: Empathize, Define, Ideate, Prototype, Test
+          </p>
+          <h3>Tools</h3>
+          <p>Figma, Google Docs</p>
         </div>
       </section>
-
-      <section class="personas">
-        <h2>Personas</h2>
+      <section class="container">
+        <h2>1. Empathize</h2>
+        <h3>User Personas</h3>
+        <!-- <p>User Personas were</p> -->
         <div class="box-container">
           <div class="box">
             <div class="box__heading">
               <img src="images/Pattern/Ana.webp" alt="" />
               <h3>Ana</h3>
-              <h4>
-                26 years old<br />
-                B.A. Film Production<br />
-                Remote Video Editor<br />
-                Marina, CA
-              </h4>
+              <p>Age: 26 years old</p>
+              <p>Education: B.A. Filmmaking</p>
+              <p>Occupation: Editor</p>
+              <p>Location: Santa Cruz, CA</p>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <h4>Bio</h4>
                 <p>
                   Ana is a video editor looking to upgrade from her laptop to a
@@ -112,8 +121,7 @@
                   experience building computers and is not an enthusiast.
                 </p>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Goals</h4>
                 <ul>
                   <li>
@@ -128,8 +136,7 @@
                   </li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Frustrations</h4>
                 <ul>
                   <li>Nervous to build and set up a computer herself</li>
@@ -146,15 +153,13 @@
             <div class="box__heading">
               <img src="images/Pattern/Emma.webp" alt="" />
               <h3>Emma</h3>
-              <h4>
-                28 years old<br />
-                B.S. Computer Science<br />
-                Software Developer<br />
-                Seattle, WA
-              </h4>
+              <p>Age: 28 years old</p>
+              <p>Education: B.S. Computer Sci.</p>
+              <p>Occupation: Software Developer</p>
+              <p>Location: Seattle, WA</p>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <h4>Bio</h4>
                 <p>
                   Emma is a software developer, casual gamer, and PC enthusiast.
@@ -164,8 +169,7 @@
                   looking to purchase a new case for her next build.
                 </p>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Goals</h4>
                 <ul>
                   <li>
@@ -178,8 +182,7 @@
                   </li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Frustrations</h4>
                 <ul>
                   <li>
@@ -191,114 +194,91 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="user-stories">
-        <h2>User Stories</h2>
+        <h3>User Stories</h3>
         <div class="info-container">
-          <div class="info">
-            <h3>Ana</h3>
-            <p>
-              As a video editor and first-time PC customer, I want to purchase a
-              custom PC from the company that makes the case I like, so that I
-              have help choosing parts which fit my budget and I don't have to
-              build the computer myself.
-            </p>
-          </div>
-          <div class="info">
-            <h3>Emma</h3>
-            <p>
-              As a software developer, casual gamer, and PC enthusiast, I want
-              to purchase a stand-alone computer case, so that I can save money,
-              choose each part, reuse old parts, and build the PC myself.
-            </p>
-          </div>
+          <p>
+            Ana: As a video editor and first-time PC customer, I want to
+            purchase a custom PC from the company that makes the case I like, so
+            that I have help choosing parts which fit my budget and I don't have
+            to build the computer myself.
+          </p>
+          <p>
+            Emma: As a software developer, casual gamer, and PC enthusiast, I
+            want to purchase a stand-alone computer case, so that I can save
+            money, choose each part, reuse old parts, and build the PC myself.
+          </p>
         </div>
       </section>
-
-      <section class="problem-statements">
-        <h2>Problem Statements</h2>
+      <section class="container">
+        <h2>2. Define</h2>
+        <h3>Problem Statements</h3>
         <div class="info-container">
-          <div class="info">
-            <h3>Ana</h3>
-            <p>
-              Ana is a professional and non-enthusiast who needs to purchase a
-              plug-and-play PC that matches her professional working environment
-              because she values aesthetics, is nervous to build a computer
-              herself, and is unsure about which components offer the best
-              price-performance and quality of life.
-            </p>
-          </div>
-          <div class="info">
-            <h3>Emma</h3>
-            <p>
-              Emma is a pc-enthusiast who needs to purchase a stand-alone
-              computer case for her new PC build because she enjoys building
-              computers and wants to save money, choose each component, and
-              reuse components from her last build.
-            </p>
-          </div>
+          <p>
+            Ana is a professional and non-enthusiast who needs to purchase a
+            plug-and-play PC that matches her professional working environment
+            because she values aesthetics, is nervous to build a computer
+            herself, and is unsure about which components offer the best
+            price-performance and quality of life.
+          </p>
+          <p>
+            Emma is a pc-enthusiast who needs to purchase a stand-alone computer
+            case for her new PC build because she enjoys building computers and
+            wants to save money, choose each component, and reuse components
+            from her last build.
+          </p>
+        </div>
+        <h3>Hypothesis Statements</h3>
+        <div class="info-container">
+          <p>
+            Ana needs an e-commerce website that allows her to configure a
+            prebuilt computer from a curated list of PC components that offer
+            best value for her individual budget.
+          </p>
+          <p>
+            Emma needs an e-commerce website that sells a stand-alone computer
+            case and provides detailed images and specifications on dimensions
+            and hardware compatibility so she can plan and execute her build.
+          </p>
+        </div>
+        <h3>Goal Statements</h3>
+        <div class="info-container">
+          <p>
+            The e-commerce website will let users configure a PC from a curated
+            list of components which will affect non-enthusiasts by helping to
+            narrow their options to the best value and quality of life
+            components within their budget and hardware requirements as well as
+            take care of the build and set up process for them. Effectiveness
+            will be measured by amount of PC's sold.
+          </p>
+          <p>
+            The e-commerce website will let users purchase, view large product
+            images, and see detailed specifications of the computer case which
+            will affect consumers building or upgrading their computer by
+            offering them an aesthetic and performance focused case.
+            Effectiveness will be measured by amount of cases sold.
+          </p>
         </div>
       </section>
-
-      <section class="hypothesis-statements">
-        <h2>Hypothesis Statements</h2>
-        <div class="info-container">
-          <div class="info">
-            <h3>Ana</h3>
-            <p>
-              Ana needs an e-commerce website that allows her to configure a
-              prebuilt computer from a curated list of PC components that offer
-              best value for her individual budget.
-            </p>
-          </div>
-          <div class="info">
-            <h3>Emma</h3>
-            <p>
-              Emma needs an e-commerce website that sells a stand-alone computer
-              case and provides detailed images and specifications on dimensions
-              and hardware compatibility so she can plan and execute her build.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="goal-statements">
-        <h2>Goal Statements</h2>
-
-        <p class="headerless-info">
-          The e-commerce website will let users configure a PC from a curated
-          list of components which will affect non-enthusiasts by helping to
-          narrow their options to the best value and quality of life components
-          within their budget and hardware requirements as well as take care of
-          the build and set up process for them. Effectiveness will be measured
-          by amount of PC's sold.
+      <section class="container">
+        <h2>3. Ideate</h2>
+        <h3>Competitive Audit</h3>
+        <p class="description">
+          Goal: Analyze the interaction and visual design of competitors' PC/Mac
+          customization features to identify strengths and weaknesses,
+          generating insights that will inform the design direction.
         </p>
-
-        <p class="headerless-info">
-          The e-commerce website will let users purchase, view large product
-          images, and see detailed specifications of the computer case which
-          will affect consumers building or upgrading their computer by offering
-          them an aesthetic and performance focused case. Effectiveness will be
-          measured by amount of cases sold.
-        </p>
-      </section>
-
-      <section class="competitive-audit">
-        <h2>Competitive Audit</h2>
-        <div class="competitive-audit-container">
+        <div class="box-container">
           <div class="box">
             <div class="box__heading">
               <h3>NZXT</h3>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <a href="https://nzxt.com/build/pc" target="_blank"
                   >nzxt.com/build/pc</a
                 >
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Successes</h4>
                 <ul>
                   <li>
@@ -311,8 +291,7 @@
                   <li>Specific components listed</li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Drawbacks</h4>
                 <ul>
                   <li>PC-customization interface is noisy</li>
@@ -329,16 +308,15 @@
             <div class="box__heading">
               <h3>Corsair</h3>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <a
                   href="https://www.corsair.com/us/en/c/gaming-computers"
                   target="_blank"
                   >corsair.com/gaming-computers</a
                 >
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Successes</h4>
                 <ul>
                   <li>Main nav hides on scroll, simplifying interface</li>
@@ -348,8 +326,7 @@
                   </li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Drawbacks</h4>
                 <ul>
                   <li>Specific GPU and motherboard used are not listed</li>
@@ -367,16 +344,15 @@
             <div class="box__heading">
               <h3>Origin</h3>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <a
                   href="https://www.originpc.com/configurator/neuron/"
                   target="_blank"
                   >originpc.com/configurator</a
                 >
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Successes</h4>
                 <ul>
                   <li>Customizable PC Panel print and laser etching</li>
@@ -384,8 +360,7 @@
                   <li>Wide range of available components</li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Drawbacks</h4>
                 <ul>
                   <li>
@@ -404,16 +379,15 @@
           </div>
           <div class="box">
             <div class="box__heading">
-              <h3>iBuyPower</h3>
+              <h3>IBuyPower</h3>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <a href="https://www.ibuypower.com/gaming-pcs" target="_blank"
                   >ibuypower.com/gaming-pcs</a
                 >
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Successes</h4>
                 <ul>
                   <li>Info and specs available for each component</li>
@@ -423,8 +397,7 @@
                   <li>Product comparison feature</li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Drawbacks</h4>
                 <ul>
                   <li>Small product images and use of placeholders</li>
@@ -441,14 +414,13 @@
             <div class="box__heading">
               <h3>Apple</h3>
             </div>
-            <div class="box__info">
-              <div class="box__info__section">
+            <div class="box__info-section">
+              <div class="box__info">
                 <a href="https://www.apple.com/mac/" target="_blank"
                   >apple.com/mac</a
                 >
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Successes</h4>
                 <ul>
                   <li>Simple Mac Customization page on desktop and mobile</li>
@@ -459,8 +431,7 @@
                   <li>Few SKUs</li>
                 </ul>
               </div>
-
-              <div class="box__info__section">
+              <div class="box__info">
                 <h4>Drawbacks</h4>
                 <ul>
                   <li>Limited hardware and software compatibility</li>
@@ -469,93 +440,98 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="sketches">
-        <h2>Sketches</h2>
-        <img src="images/Pattern/Sketches.webp" alt="" />
-      </section>
-
-      <section class="sitemap">
-        <h2>Sitemap</h2>
-        <div class="prototype__sitemap">
-          <p class="headerless-info">
-            This sitemap aims to simplify navigation, limit page-count, improve
-            discoverability, reduce clicks, focus on the main user flows, and
-            remove the need for a mobile drop-down menu.
+          <p>
+            Insights: The interface should prioritize a clean, spacious layout,
+            minimizing unnecessary elements or an overload of product SKUs to
+            streamline user tasks and enhance efficiency. High-quality imagery,
+            video, and interactive animations should be incorporated to elevate
+            the visual design, strengthen branding, and enrich the user
+            experience. Additionally, large product images and comprehensive
+            specifications are essential to provide users with clear, detailed
+            information about the product they are purchasing.
           </p>
-          <img src="images/Pattern/Sitemap.webp" alt="" />
         </div>
-      </section>
-      <section class="mockups">
-        <h2>Mockups</h2>
-        <p class="headerless-info">
-          The goal was to create usable, aesthetics-driven, and user flow
-          focused mockups. The mockups aim for clarity, conciseness, and to not
-          dissociate professionals.
+
+        <h3>Sitemap</h3>
+        <p class="description">
+          The sitemap was designed to streamline navigation, minimize the number
+          of pages, enhance discoverability, reduce clicks, prioritize key user
+          flows, and eliminate the need for a mobile drop-down menu. The Figma
+          design file is linked in the next section for reference.
         </p>
+      </section>
+      <section class="container">
+        <h2>4. Prototype</h2>
+        <h3>High-Fidelity Prototypes</h3>
+        <p class="description">
+          The goal was to create mockups that are usable, aesthetics-driven, and
+          focused on user flow. These mockups prioritize clarity and conciseness
+          while maintaining a professional and elegant appearance to resonate
+          with the target audience. The sites navigation and homepage
+          prioritizes the two key user flows of purchasing a case and
+          configuring a computer.
+        </p>
+        <iframe
+          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          width="800"
+          height="450"
+          src="https://embed.figma.com/design/SEPaR6QeagkbJXnxtEVnFl/Pattern?node-id=1369-1510&embed-host=share"
+          allowfullscreen
+        ></iframe>
         <a
-          href="https://www.figma.com/file/SEPaR6QeagkbJXnxtEVnFl/Pattern?type=design&node-id=2%3A72&mode=design&t=5Mre5wPNP1CM2sIz-1"
+          href="https://www.figma.com/design/SEPaR6QeagkbJXnxtEVnFl/Pattern?node-id=1369-1510&t=BVAE5S7AAgUYGukr-1"
           target="_blank"
           class="button button--secondary"
           >View Figma Design File</a
         >
-        <h3>Home Page</h3>
-        <img src="images/Pattern/Home-top.webp" alt="" />
-        <img src="images/Pattern/Home-bottom.webp" alt="" />
-        <h3>Silvia (Case) Page</h3>
-        <img src="images/Pattern/Silvia-Top.webp" alt="" />
-        <img src="images/Pattern/Silvia-Mid.webp" alt="" />
-        <img src="images/Pattern/Silvia-bottom.webp" alt="" />
-        <h3>PC (Configurator) Page</h3>
-        <img src="images/Pattern/PC-Top.webp" alt="" />
-        <img src="images/Pattern/PC-Mid.webp" alt="" />
-        <h3>Cart</h3>
-        <img src="images/Pattern/Cart.webp" alt="" />
-        <h3>Shipping</h3>
-        <img src="images/Pattern/Shipping.webp" alt="" />
-        <h3>Payment</h3>
-        <img src="images/Pattern/Payment.webp" alt="" />
-        <h3>Confirmation</h3>
-        <img src="images/Pattern/Confirmation.webp" alt="" />
       </section>
-
-      <section class="takeaways">
+      <section class="container">
+        <h2>5. Test</h2>
+        <p>User Testing has not been conducted for this project.</p>
+      </section>
+      <section class="container">
         <h2>Takeaways</h2>
-
-        <p class="headerless-info">
-          The benefits of creating a design system and stickersheet of
-          components and variants early on in a project materialize as a project
-          grows in size and complexity.
-        </p>
-
-        <p class="headerless-info">
-          Competitive Analysis could have been expanded to include stand-alone
-          PC case pages on NZXT, Corsair, and other case manufacturers who do
-          not offer prebuilt PC's or a PC building service. Businesses who offer
-          a single or limited amount of products would have also been beneficial
-          additions.
-        </p>
+        <div class="info-container">
+          <p>
+            Continuous iteration and incremental improvements overtime lead to
+            an end product that is both more usable and aesthetic.
+          </p>
+          <p>
+            The Competitive Analysis could be enhanced by including stand-alone
+            PC case pages from brands like NZXT, Corsair, as well as other
+            manufacturers that focus solely on cases, without offering prebuilt
+            PCs or PC building services. Additionally, incorporating businesses
+            that specialize in a single or limited range of products would
+            provide valuable insights.
+          </p>
+        </div>
       </section>
-
-      <section class="next-steps">
+      <section class="container">
         <h2>Next Steps</h2>
         <ul>
+          <li>Finish UI Design of Mobile Version 2</li>
           <li>Conduct usability studies on desktop and mobile</li>
           <li>Finish interaction, animation, imagery, and footer pages</li>
-          <li>Continue to iterate and improve visual design and UX</li>
           <li>
             Include diagrams of price-performance and efficiency of components
             vs others on the market
           </li>
           <li>Build a functional store in Webflow</li>
+          <li>Continue to iterate and improve visual design and UX</li>
         </ul>
       </section>
-
-      <section class="next-study">
-        <a href="./sdam" class="button button--primary">See Next Study: SDAM</a>
+      <section class="container next-work">
+        <a href="ep.html">
+          <img src="images/EP/EP.webp" alt="" class="project-img" />
+        </a>
+        <a href="./ep" class="button button--secondary"
+          >Next Work: EP Analytics</a
+        >
       </section>
-    </section>
+    </main>
+    <footer>
+      <p>Designed in Figma, Built with HTML & CSS</p>
+      <p>© 2024 ROBERT ECKHARDT</p>
+    </footer>
   </body>
 </html>

@@ -27,17 +27,90 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WFEFPXH8TM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
+    gtag("config", "G-WFEFPXH8TM");
+  </script>
   <body>
-    <div class="maintenance">
-      <h1>Robert<span class="heading-space"> </span>Eckhardt</h1>
-      <h2>Designer and Developer in Southern California</h2>
-      <span>Site is currently under maintenance</span>
-      <br />
-      <span
-        >You can reach me at:
-        <span class="no-caps">reckhardtx@gmail.com</span></span
-      >
-    </div>
+    <header>
+      <nav class="nav">
+        <a href="./" class="nav__title"
+          >Robert<span class="nav__title-space"> </span>Eckhardt</a
+        >
+        <ul class="list">
+          <li><a href="">reckhardtx@gmail.com</a></li>
+          <!-- <li><a href="">dark</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>
+        Designer and developer from Southern California building user-centered
+        web experiences.
+      </h1>
+      <p class="small">Thank you for visiting!</p>
+    </section>
+
+    <section class="container projects">
+      <div class="project">
+        <a href="./sdam">
+          <img src="images/SDAM/SDAMHome.webp" alt="" class="project-img" />
+        </a>
+        <h2>SDAM, 2024</h2>
+        <p class="project__description">
+          Designed UI/UX for a conceptual public art museum, facilitating
+          exhibition and event promotion, visitor information, and scheduling
+          functionality.
+        </p>
+        <!-- <a href="" class="project__button">View Case Study ></a> -->
+        <a href="sdam.html" class="button button--secondary">View Case Study</a>
+      </div>
+
+      <div class="project">
+        <a href="./pattern"
+          ><img src="images/Pattern/PatternPC.webp" alt="" class="project-img"
+        /></a>
+        <h2>Pattern, 2024</h2>
+        <p class="project__description">
+          Crafted UI/UX for a conceptual computer case manufacturer with custom
+          PC services, displaying case information and imagery along with a PC
+          configurator and checkout process.
+        </p>
+        <a href="pattern.html" class="button button--secondary"
+          >View Case Study</a
+        >
+      </div>
+
+      <div class="box">
+        <div class="project">
+          <a href="./ep"
+            ><img src="images/EP/EP.webp" alt="" class="project-img"
+          /></a>
+          <h2>EP Analytics, 2021</h2>
+          <p class="project__description">
+            Executed website UI redesign and development with EP Analytics, a
+            San Diego-based high-performance computing company, displaying
+            software, service, and company information.
+          </p>
+          <a href="ep.html" class="button button--secondary">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Designed in Figma, Built with HTML & CSS</p>
+      <p>© 2024 ROBERT ECKHARDT</p>
+    </footer>
   </body>
 </html>
