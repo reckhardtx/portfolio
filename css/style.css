@@ -213,7 +213,7 @@ ul li:not(:last-child) {
 /* ------------------------------------------------------ Footer */
 
 footer {
-  margin-top: var(--gap-large);
+  margin-top: var(--gap-largest);
   gap: var(--gap-large);
   padding-top: var(--gap);
   padding-bottom: var(--gap);
