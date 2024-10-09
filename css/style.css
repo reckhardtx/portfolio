@@ -213,7 +213,7 @@ ul li:not(:last-child) {
 /* ------------------------------------------------------ Footer */
 
 footer {
-  margin-top: var(--gap-largest);
+  margin-top: var(--gap-large);
   gap: var(--gap-large);
   padding-top: var(--gap);
   padding-bottom: var(--gap);
@@ -357,6 +357,20 @@ footer p {
   }
 
   .box__info {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------ Figma Frame */
+
+.figma-frame {
+  width: 800px;
+  height: 450px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 830px) {
+  .figma-frame {
     width: 100%;
   }
 }
