@@ -38,6 +38,17 @@ a {
   color: var(--color-primary);
 }
 
+button {
+  font-size: var(--text-body-small);
+  color: var(--color-primary);
+  font-family: "IBM Plex Mono";
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: initial;
+}
+
 a:hover {
   color: #606060;
 }
@@ -103,21 +114,18 @@ ul li:not(:last-child) {
 /* ------------------------------------------------------ Navigation */
 
 .nav {
-  height: 44px;
   width: 100%;
-  background: var(--color-body);
-  background: #f5f5f5;
-  background: #f8f7f5;
-  /* border-bottom: 1px solid #222; */
   display: flex;
-  gap: var(--gap);
   align-items: center;
   justify-content: center;
-  position: fixed;
+  position: relative;
+  padding-top: 2rem;
+  margin-bottom: -5px;
+  z-index: 1000;
 }
 
 .nav__title {
-  font-size: var(--text-heading);
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -126,23 +134,98 @@ ul li:not(:last-child) {
   font-size: 0.55rem;
 }
 
+.menu-button {
+  position: fixed;
+  left: var(--mobile-padding);
+  top: 22px;
+  display: none;
+  z-index: 1002;
+}
+
+.contact-button {
+  position: absolute;
+  right: 50px;
+}
+
+.nav-links {
+  position: sticky;
+  width: 100%;
+  background: var(--color-body);
+  top: 0px;
+  padding-top: 10px;
+}
+
 .list {
   display: flex;
-  gap: var(--gap);
+  gap: var(--gap-large);
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.mobile-contact-info {
+  display: none;
 }
 
 @media screen and (max-width: 500px) {
   .nav {
     padding-left: var(--mobile-padding);
     padding-right: var(--mobile-padding);
-    justify-content: space-between;
+    position: fixed;
+    background: var(--color-body);
+    padding-bottom: 10px;
+    /* height: 48px; */
+    /* justify-content: space-between; */
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .contact-button {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    width: 100%;
+    background: var(--color-body);
+    top: 0px;
+    height: 100%;
+    padding-top: var(--gap-largest);
+    padding-left: var(--mobile-padding);
+    z-index: 1001;
+    opacity: 0;
+    transition: top 300ms ease-in-out, opacity 300ms ease-in-out;
+    top: -100%;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    top: 0;
+  }
+
+  .list {
+    display: flex;
+    gap: var(--gap-small);
+    text-transform: uppercase;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .list li a {
+    font-size: var(--text-heading);
+  }
+
+  .mobile-contact-info {
+    margin-top: var(--gap-large);
+    display: block;
   }
 }
 
 /* ------------------------------------------------------ Hero Section */
 
 .hero {
-  padding-top: calc(44px + var(--gap-largest));
+  padding-top: var(--gap-largest);
   padding-bottom: var(--gap-largest);
   width: 800px;
   margin: 0 auto;
@@ -170,7 +253,12 @@ ul li:not(:last-child) {
   }
 }
 
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 500px) {
+  .hero {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+  }
+
   .hero h1 {
     max-width: 300px;
   }
@@ -218,10 +306,18 @@ footer {
   padding-top: var(--gap);
   padding-bottom: var(--gap);
   text-align: center;
+  text-transform: uppercase;
 }
 
 footer p {
   font-size: var(--text-body-small);
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    padding-left: var(--mobile-padding);
+    text-align: left;
+  }
 }
 
 /* ------------------------------------------------------ Case Study Page */
