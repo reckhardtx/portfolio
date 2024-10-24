@@ -301,11 +301,10 @@ ul li:not(:last-child) {
 /* ------------------------------------------------------ Footer */
 
 footer {
-  margin-top: var(--gap-largest);
-  gap: var(--gap-large);
   padding-top: var(--gap);
   padding-bottom: var(--gap);
-  text-align: center;
+  text-align: right;
+  padding-right: 50px;
   text-transform: uppercase;
 }
 
@@ -315,8 +314,8 @@ footer p {
 
 @media screen and (max-width: 500px) {
   footer {
-    padding-left: var(--mobile-padding);
-    text-align: left;
+    margin-top: var(--gap-large);
+    padding-right: var(--mobile-padding);
   }
 }
 
